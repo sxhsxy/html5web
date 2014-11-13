@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="components/jquery-ui-1.11.2/jquery-ui.css">
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="components/jquery-ui-1.11.2/jquery-ui.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #menu {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            border: 1px solid #e3e3e3;
+        }
+
+        #menu ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #menu ul li a {
+            display: block;
+            width: 80px;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 50px;
+            color: #606060;
+            background: #fbfbfb;
+            text-align: center;
+        }
+
+        #menu ul li a:hover {
+            color: #ffffff;
+            background: #0088bb;
+        }
+
+        #header {
+            background: #0088bb;
+            /*width: 100%;*/
+            height: 40px;
+            padding: 10px 20px 10px;
+        }
+
+        #header h1 {
+            color: wheat;
+            font-size: 10pt;
+            /*line-height: 60px;*/
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #admin {
+            float: right;
+        }
+
+        #admin a {
+            margin: 20px;
+            font-size: 8pt;
+            color: wheat;
+        }
+        #main {
+            overflow: hidden;
+            background: #ddddee;
+        }
+        #sidebar {
+            float: left;
+            width: 20%;
+        }
+        #sidebar h2 {
+            font-size: 8pt;
+        }
+        #sidebar ul {
+            padding: 0 20px;
+        }
+
+        #sidebar a {
+            font-size: 8pt;
+        }
+        #content-wrap {
+            float: right;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <h1>jQuery UI标准后台页面演示系统</h1>
+    </div>
+    <div id="admin">
+        <a>用户名</a><a>通知</a><a>设置</a>
+    </div>
+</div>
+<div id="main">
+    <div id="sidebar">
+        <div id="accordion">
+            <h2>机构</h2>
+
+                <ul>
+                    <li><a href="#">机构列表</a></li>
+                    <li><a href="#">用户列表</a></li>
+                    <li><a href="#">用户列表</a></li>
+                    <li><a href="#">用户列表</a></li>
+                    <li><a href="#">用户列表</a></li>
+                    <li><a href="#">用户列表</a></li>
+                </ul>
+
+            <h2>用户管理</h2>
+            <ul>
+                <li><a>机构列表</a></li>
+                <li><a>用户列表</a></li>
+            </ul>
+            <h2>Section 3</h2>
+
+
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+
+        </div>
+    </div>
+
+    <div id="content-wrap">
+        <div id="nav">
+            <h3>===========================</h3>
+        </div>
+        <div id="content">
+            <img src="img/penguins.jpg" />
+        </div>
+    </div>
+</div>
+<div id="footer">fooooooooooo000000000oooter</div>
+<div id="menu">
+    <ul>
+        <li><a href="#">1F Item</a></li>
+        <li><a href="#">2F Itemx</a></li>
+        <li><a href="#">3F Item</a></li>
+        <li><a href="#">4F Item</a></li>
+        <li><a href="#">5F Item</a></li>
+    </ul>
+</div>
+<script>
+    $( "#accordion" ).accordion({ collapsible: true });
+</script>
+</body>
+</html>

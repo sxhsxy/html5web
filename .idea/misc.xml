@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../idea/RepositoryManager" value="1401676166271" />
+        <entry key="$PROJECT_DIR$/../../java/hibernate/jpa-test" value="1390825157946" />
+        <entry key="$PROJECT_DIR$/../../java/idea/gradle-tutor" value="1391000044734" />
+        <entry key="$PROJECT_DIR$/../../java/idea/repository-manager" value="1401966795936" />
+      </map>
+    </option>
+  </component>
+  <component name="IdProvider" IDEtalkID="AC2DD3DD0447D14FA18A025A415CF2CF" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
