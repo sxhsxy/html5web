@@ -46,15 +46,15 @@
         }
 
         #header {
-            background: #0088bb;
+            background: #D0E6E7;
             /*width: 100%;*/
             height: 40px;
             padding: 10px 20px 10px;
         }
 
         #header h1 {
-            color: wheat;
-            font-size: 10pt;
+            color: #565450;
+            font-size: 12pt;
             /*line-height: 60px;*/
         }
 
@@ -69,7 +69,7 @@
         #admin a {
             margin: 20px;
             font-size: 8pt;
-            color: wheat;
+            color: #565450;
         }
         #main {
             overflow: hidden;
@@ -92,6 +92,14 @@
         #content-wrap {
             float: right;
             width: 80%;
+        }
+        #tabs a {
+            font-size: 8pt;
+        }
+        #footer {
+            padding: 5px;
+            border-top: #888888 solid 1px;
+            text-align: center;
         }
     </style>
 </head>
@@ -136,15 +144,22 @@
     </div>
 
     <div id="content-wrap">
-        <div id="nav">
-            <h3>===========================</h3>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">首页</a></li>
+                <li><a href="#tab2">标签2</a></li>
+                <li><a href="#tab3">标签3</a></li>
+            </ul>
+
+
+        <div id="tab1" class="content"><img src="img/penguins.jpg" /></div>
+        <div id="tab2" class="content">
+TTTTTTTTTTAAAAAAAAAAAABBBBBBBBBBBBBBBB2
         </div>
-        <div id="content">
-            <img src="img/penguins.jpg" />
-        </div>
+        <div id="tab3" class="content"></div>
     </div>
-</div>
-<div id="footer">fooooooooooo000000000oooter</div>
+</div>   </div>
+<div id="footer"><span>===========页脚============</span></div>
 <div id="menu">
     <ul>
         <li><a href="#">1F Item</a></li>
@@ -156,6 +171,7 @@
 </div>
 <script>
     $( "#accordion" ).accordion({ collapsible: true });
+    $("#tabs").tabs();
 </script>
 </body>
 </html>
