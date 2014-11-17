@@ -214,7 +214,7 @@
     newTab("首页");
     function newTab(moduleName) {
         var url = "humans.txt";
-        $("<li><a href='" + url + "'>" + moduleName + "</a><span class='ui-icon ui-icon-close' onclick='closeTab($(this).offsetParent())' /></li>")
+        $("<li><a href='" + url + "'>" + moduleName + "</a><span class='ui-icon ui-icon-close' onclick='closeTab($(this).closest(\"li\"))' /></li>")
                 .appendTo("#tabs .ui-tabs-nav");
         $("#tabs").tabs("refresh").tabs("option", "active", -1);
 
