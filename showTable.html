@@ -10,6 +10,11 @@
     <script src="components/DataTables-1.10.4/media/js/jquery.dataTables.js"></script>
 </head>
 <body>
+<div class="toolbar">
+    <button id="new">新建</button>
+    <button id="edit">编辑</button>
+    <button id="delete">删除</button>
+</div>
 <table id="example" class="display" cellspacing="0" width="100%">
     <thead>
     <tr>
@@ -34,7 +39,26 @@
     </tfoot>
 </table>
 <script>
-    $("#example").dataTable({"ajax": "components/DataTables-1.10.4/examples/ajax/data/arrays.txt"});
+    $("#example").ready(function() {
+        var table = $('#example').DataTable({"ajax": "components/DataTables-1.10.4/examples/ajax/data/arrays.txt"});
+
+        $('#example tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        } );
+
+        $('#delete').click( function () {
+            table.row('.selected').remove().draw( false );
+        } );
+        $("#new").click(function(){
+
+        });
+    });
 </script>
 </body>
 </html>
