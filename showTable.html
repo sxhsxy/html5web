@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="components/jquery-ui-1.11.2/jquery-ui.css">
+    <link rel="stylesheet" href="components/DataTables-1.10.4/media/css/jquery.dataTables.min.css">
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="components/jquery-ui-1.11.2/jquery-ui.js"></script>
+    <script src="components/DataTables-1.10.4/media/js/jquery.dataTables.js"></script>
+</head>
+<body>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+
+    <tfoot>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Extn.</th>
+        <th>Start date</th>
+        <th>Salary</th>
+    </tr>
+    </tfoot>
+</table>
+<script>
+    $("#example").dataTable({"ajax": "components/DataTables-1.10.4/examples/ajax/data/arrays.txt"});
+</script>
+</body>
+</html>
